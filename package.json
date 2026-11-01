@@ -1,0 +1,36 @@
+{
+  "name": "inspectiq",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"node --watch server/index.js\" \"vite\"",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@fontsource/caveat": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/patrick-hand": "^5.3.0",
+    "express": "^4.22.3",
+    "jpeg-js": "^0.4.4",
+    "lenis": "^1.3.27",
+    "motion": "^14.9.0",
+    "multer": "^2.5.0",
+    "pdfkit": "^0.20.2",
+    "pngjs": "^7.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6",
+    "roughjs": "^4.6.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.6",
+    "vite": "^8.3.5"
+  }
+}
